@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCM Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" width="100%" height="24" class="d-inline-block align-text-top">
+                TCM Tracker
+          </a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdd3TryxmqCLJV8zVFH74slRPzF4hKYVQQnZwbmOu1Mbba5JA/formResponse" method="POST">
+            <div class="mb-3">
+                <label for="discord-name" class="form-label">Discord Name: </label>
+                <input class="form-control" type="text" id="discord-name" name="entry.1718661496" required>
+            </div>
+            <div class="mb-3">
+                <label for="discord-username" class="form-label">Discord Username: </label>
+                <input class="form-control" type="text" id="discord-username" name="entry.974989595" required>
+            </div>
+            <div class="mb-3">
+                <label for="valorant-id" class="form-label">Valorant ID: </label>
+                <input class="form-control" type="text" id="valorant-id" name="entry.1087120593" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Current Rank: </label>
+                <select class="form-select" id="rank" name="entry.1048658223" required>
+                    <option value="Iron">Iron</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Diamond">Diamond</option>
+                    <option value="Ascendant">Ascendant</option>
+                    <option value="Immortal">Immortal</option>
+                    <option value="Radiant">Radiant</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Current Rank Tier: </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="one" name="entry.1065228785" value="I" required>
+                    <label class="form-check-label" for="one">I</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="two" name="entry.1065228785" value="II">
+                    <label class="form-check-label" for="two">II</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="three" name="entry.1065228785" value="III">
+                    <label class="form-check-label" for="three">III</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="radiant" name="entry.1065228785" value="- (radiant)">
+                    <label class="form-check-label" for="radiant">- (radiant)</label>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+    </div>
+</body>
+</html>
